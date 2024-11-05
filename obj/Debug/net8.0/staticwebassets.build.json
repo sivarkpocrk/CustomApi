@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "gZcHlsWGZqCN/cMU+INQwAGDY1iv8I1RYXaIjgAvtKs=",
+  "Hash": "73zLH8fjCCGInmCnpdSAKZ8mzoUJkZ1H4ZBVMuBSDTc=",
   "Source": "CustomApi",
   "BasePath": "_content/CustomApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "CustomApi\\wwwroot",
+      "Source": "CustomApi",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Automation\\ExampleAPIprj\\CustomApi\\wwwroot\\",
+      "BasePath": "_content/CustomApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Automation\\ExampleAPIprj\\CustomApi\\wwwroot\\swagger-custom.css",
+      "SourceId": "CustomApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Automation\\ExampleAPIprj\\CustomApi\\wwwroot\\",
+      "BasePath": "_content/CustomApi",
+      "RelativePath": "swagger-custom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\swagger-custom.css"
+    }
+  ]
 }

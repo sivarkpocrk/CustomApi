@@ -1,0 +1,71 @@
+/* Hide the "Schemas" section from the Swagger UI */
+.models {
+    display: none !important;
+}
+/*
+/* /* Set a gradient background for the Swagger UI */
+body {
+    background: linear-gradient(135deg, #d0d862, #9f75c9);
+    font-family: Arial, sans-serif;
+}
+
+/* Customize the main heading color */
+/* .swagger-ui .topbar {
+    background-color: #11dcd9 !important;
+} */
+
+Change the color of text inside headers */
+.swagger-ui h1,
+.swagger-ui h2,
+.swagger-ui h3 {
+    color: #d7dd5a !important;
+    /* Pink color */
+}
+
+/* Customize API operation names */
+.swagger-ui .opblock-summary {
+    background-color: #d25d5d !important;
+    color: rgb(171, 134, 134) !important;
+}
+
+/* Style the response codes with a vibrant color */
+.swagger-ui .responses-inner h4 {
+    color: #0b1693 !important;
+    /* Purple text for headers */
+}
+
+/* Change the text color for all labels */
+.swagger-ui .parameter__name,
+.swagger-ui .parameter__type {
+    color: #160ca9 !important;
+}
+
+/* Customize the 'Try it out' button */
+.swagger-ui .btn.try-out__btn {
+    background-color: #69c4cd !important;
+    color: #5ee87e !important;
+}
+
+/* Change the appearance of the Execute button */
+/* .swagger-ui .btn.execute {
+    background-color: #e5cf29 !important;
+    color: #ffffff !important;
+    border-radius: 5px !important;
+} */
+
+/* Modify the response section background */
+/* .swagger-ui .responses-wrapper {
+    background-color: rgba(19, 131, 78, 0.1) !important;
+    border: 1px solid #ff33ff !important;
+} */
+
+/* Remove underline from links and change color */
+/* .swagger-ui a {
+    color: #9f3ae3 !important;
+    text-decoration: none !important;
+} */
+
+/* Style the footer text
+.swagger-ui .footer {
+    color: #a133cc !important;
+} */

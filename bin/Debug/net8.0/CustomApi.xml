@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CustomApi</name>
+    </assembly>
+    <members>
+        <member name="T:CustomApi.Controllers.AuthorController">
+            <summary>
+            This is the AuthorController, responsible for handling author-related API requests.
+            </summary>
+        </member>
+        <member name="M:CustomApi.Controllers.AuthorController.#ctor(CustomApi.Services.Interfaces.IAuthorService,AutoMapper.IMapper)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CustomApi.Controllers.AuthorController"/> class.
+            </summary>
+            <param name="authorService">The author service dependency.</param>
+            <param name="mapper">The AutoMapper dependency for data transformation.</param>
+        </member>
+        <member name="M:CustomApi.Controllers.AuthorController.GetAuthors">
+            <summary>
+            Retrieves a list of all authors.
+            </summary>
+            <returns>A list of authors.</returns>
+        </member>
+        <member name="M:CustomApi.Controllers.AuthorController.GetAuthorById(System.Int32)">
+            <summary>
+            Retrieves an author by their ID.
+            </summary>
+            <param name="id">The ID of the author to retrieve.</param>
+            <returns>An author object if found; otherwise, a 404 response.</returns>
+        </member>
+        <member name="M:CustomApi.Controllers.AuthorController.CreateAuthor(CustomApi.Models.AuthorDTO)">
+            <summary>
+            Creates a new author.
+            </summary>
+            <param name="authorDto">The author object to create.</param>
+            <returns>The created author object.</returns>
+        </member>
+        <member name="T:CustomApi.Controllers.ProductController">
+            <summary>
+            Handles product-related API requests.
+            </summary>
+        </member>
+        <member name="M:CustomApi.Controllers.ProductController.#ctor(CustomApi.Data.AppDbContext,AutoMapper.IMapper)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CustomApi.Controllers.ProductController"/> class.
+            </summary>
+            <param name="context">The database context to interact with the product data.</param>
+            <param name="mapper">The AutoMapper service for DTO conversion.</param>
+        </member>
+        <member name="M:CustomApi.Controllers.ProductController.GetProducts">
+            <summary>
+            Retrieves a list of all products.
+            </summary>
+            <returns>A list of products.</returns>
+        </member>
+        <member name="M:CustomApi.Controllers.ProductController.GetProductById(System.Int32)">
+            <summary>
+            Retrieves a specific product by its ID.
+            </summary>
+            <param name="id">The ID of the product to retrieve.</param>
+            <returns>The product if found; otherwise, a 404 response.</returns>
+        </member>
+        <member name="M:CustomApi.Controllers.ProductController.CreateProduct(CustomApi.Models.ProductDTO)">
+            <summary>
+            Creates a new product.
+            </summary>
+            <param name="productDto">The product DTO containing the details of the new product.</param>
+            <returns>The created product, along with its URI location.</returns>
+        </member>
+        <member name="T:CustomApi.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomApi.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomApi.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomApi.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomApi.Models.AuthorDTO.FirstName">
+            <summary>
+            Gets or sets the first name of the author. This field is required.
+            </summary>
+        </member>
+        <member name="P:CustomApi.Models.AuthorDTO.LastName">
+            <summary>
+            Gets or sets the last name of the author. This field is required.
+            </summary>
+        </member>
+    </members>
+</doc>

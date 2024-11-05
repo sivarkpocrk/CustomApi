@@ -1,7 +1,13 @@
 using System;
-public class ProductDTO
+
+namespace CustomApi.Models
 {
-    public string Name { get; set; }
-    public decimal Price { get; set; }
-    public DateTime ReleaseDate { get; set; } // Optional, based on your requirements
+    public class ProductDTO
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public decimal Price { get; set; }
+        public int StockQuantity { get; set; }
+        public DateTime ReleaseDate { get; set; }
+    }
 }
